@@ -1,5 +1,7 @@
-const API_URL = "http://127.0.0.1:5000/chat/stream";
-const RESET_URL = "http://127.0.0.1:5000/reset";
+
+const BASE_URL="http://127.0.0.1:5000" || "https://afzalve-guttershutterchatbot.hf.space";
+const API_URL = `${BASE_URL}/chat/stream`;
+const RESET_URL = `${BASE_URL}/reset`;
 
 // 🔐 Session
 function generateSessionId() {
